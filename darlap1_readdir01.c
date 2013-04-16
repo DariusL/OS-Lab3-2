@@ -16,11 +16,11 @@ void dl_spausdinti_irasus(const char *name){
 	DIR *dir;
 	struct dirent *ent;
 	dir = opendir(name);
-	dirent = readdir(dir);
-	while(dirent){
+	ent = readdir(dir);
+	while(ent){
 		printf("Failo %s numeris - %lu\n",
-			dirent->d_name, dirent->ino_t);
-		dirent = readdir(dir);
+			ent->d_name, ent->d_ino);
+		ent= readdir(dir);
 	}
 	closedir(dir);
 }
