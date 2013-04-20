@@ -1,4 +1,5 @@
 /* Darius Lapunas IF-1/8 darlap1 */
+/*darlap1_pathconf.c*/
 
 #include <stdio.h>
 #include <unistd.h>
